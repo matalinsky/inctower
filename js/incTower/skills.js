@@ -127,7 +127,7 @@ define(['incTower/core', 'lib/knockout', 'lib/break_infinity', 'lib/moment', 'li
             baseCost: 8.785,
             growth: 1.15,
             describeRank: function (rank) {
-                return 'Passively gain ' + (1000 * rank) + ' gold per second.';
+                return 'Passively gain ' + (1001 * rank) + ' gold per second.';
             },
             grants: {
                 10: ['marketConnections']
