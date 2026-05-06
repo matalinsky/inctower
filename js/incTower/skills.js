@@ -61,7 +61,7 @@ define(['incTower/core', 'lib/knockout', 'lib/break_infinity', 'lib/moment', 'li
             baseCost: 135,
             growth: 1.15,
             describeRank: function (rank) {
-                return 'Reduces the cost of upgrading all towers by ' + (rank * 5) + '%.';
+                return 'Reduces the cost of upgrading all towers by ' + (rank * 10) + '%.';
             },
             maxLevel: 5,
             grants: {
@@ -73,7 +73,7 @@ define(['incTower/core', 'lib/knockout', 'lib/break_infinity', 'lib/moment', 'li
             baseCost: 177.307,
             growth: 1.15,
             describeRank: function (rank) {
-                return "Each hit from a tower now reduces its upgrade cost by " + (rank * 0.1) + "% of the monster's gold value. Towers will automatically upgrade when their upgrade cost reaches zero.";
+                return "Each hit from a tower now reduces its upgrade cost by " + (rank * 0.25) + "% of the monster's gold value. Towers will automatically upgrade when their upgrade cost reaches zero.";
             },
             maxLevel: 10
         },
@@ -110,7 +110,7 @@ define(['incTower/core', 'lib/knockout', 'lib/break_infinity', 'lib/moment', 'li
             baseCost: 533.938,
             growth: 1.15,
             describeRank: function (rank) {
-                return 'Refunds an additional ' + (rank * 5) + '% of gold spent after the sale of a tower.';
+                return 'Refunds an additional ' + (rank * 15) + '% of gold spent after the sale of a tower.';
             },
             maxLevel: 5
         },
@@ -127,7 +127,7 @@ define(['incTower/core', 'lib/knockout', 'lib/break_infinity', 'lib/moment', 'li
             baseCost: 8.785,
             growth: 1.15,
             describeRank: function (rank) {
-                return 'Passively gain ' + (rank) + ' gold per second.';
+                return 'Passively gain ' + (500 * rank) + ' gold per second.';
             },
             grants: {
                 10: ['marketConnections']
@@ -137,7 +137,7 @@ define(['incTower/core', 'lib/knockout', 'lib/break_infinity', 'lib/moment', 'li
         marketConnections: {
             fullName: 'Market Connections',
             baseCost: 35.141,
-            growth: 1.15,
+            growth: 5.5,
             describeRank: function (rank) {
                 return 'Increases the gold reward on each kill by ' + (rank) + '%.';
             }
@@ -522,13 +522,13 @@ define(['incTower/core', 'lib/knockout', 'lib/break_infinity', 'lib/moment', 'li
             growth: 1.15,
             maxLevel: 5,
             describeRank: function (rank) {
-                return "Increases the duration of support tower buffs by " + (rank * 10) + '%.';
+                return "Increases the duration of support tower buffs by " + (rank * 100) + '%.';
             }
         },
         powerGrid: {
             fullName: 'Power Grid',
             baseCost: 175.707,
-            growth: 1.15,
+            growth: 3.15,
             describeRank: function (rank) {
                 return "Increases the damage of all towers by " + (rank * 5) + '% per neighboring support tower (up to a maximum of ' + (rank * 5 * 8) + "%).";
             }
