@@ -137,7 +137,7 @@ define(['incTower/core', 'lib/knockout', 'lib/break_infinity', 'lib/moment', 'li
         marketConnections: {
             fullName: 'Market Connections',
             baseCost: 35.141,
-            growth: 5.5,
+            growth: 10.5,
             describeRank: function (rank) {
                 return 'Increases the gold reward on each kill by ' + (rank) + '%.';
             }
