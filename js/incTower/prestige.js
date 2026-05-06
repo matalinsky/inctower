@@ -14,7 +14,7 @@ define(['incTower/core', 'lib/knockout', 'lib/break_infinity', 'incTower/path', 
     }
     incTower.describePrestige  = function (points, next) {
             if (next) {
-                return 'On your next prestige reset your prestige points will be increased by ' + points + ' which, combined with your current prestige points if any, will increase your learning rate by ' + incTower.humanizeNumber(prestigeDiminished(points + incTower.prestigePoints())) + '%. Potential points are earned by defeating bosses after wave 100.';
+                return 'On your next prestige reset your prestige points will be increased by ' + points + ' which, combined with your current prestige points if any, will increase your learning rate by ' + incTower.humanizeNumber(prestigeDiminished(points + incTower.prestigePoints()*5)) + '%. Potential points are earned by defeating bosses after wave 100.';
             }
             return 'Increases your skill learning rate by ' + incTower.humanizeNumber(prestigeDiminished(points)) + '%.';
         };
